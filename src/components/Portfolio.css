@@ -1,0 +1,124 @@
+
+
+.arrow-container1 {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 70px;
+  }
+  
+  .arrow-text1 {
+    font-size: 18px;
+    margin-right: -130px;
+    color: #8a8a8a;
+    opacity: 0; /* Start with the text hidden */
+    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth fade-in effect */
+  }
+  
+  .arrow-container1:hover .arrow1 {
+    opacity: 1; /* Show the text on hover */
+  }
+  .arrow-container1:hover .arrow-text1 {
+    opacity: 1; /* Show the text on hover */
+  }
+  
+  .arrow1 {
+    width: 70px;
+    height: 50px;
+    opacity: 0.5;
+    transform: rotate(180deg);
+    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth fade-in effect */
+
+  }
+
+  .arrow-container {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .arrow-text {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #8a8a8a;
+    opacity: 0; /* Start with the text hidden */
+    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth fade-in effect */
+  }
+  
+  .arrow-container:hover .arrow {
+    opacity: 1; /* Show the text on hover */
+  }
+  
+  .arrow {
+    width: 70px;
+    height: 50px;
+    opacity: 0.5; 
+    transition: opacity 0.3s ease-in-out; /* Add a transition for smooth fade-in effect */
+
+  }
+
+  .game-lettering1 h1 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    color: rgb(218, 218, 218);
+  }
+  
+
+@media screen and (max-width: 768px) {
+
+  body{
+    overflow-x: hidden;
+    
+  }
+
+  .arrow-container {
+    display: none;
+  }
+
+  .arrow-container1 {
+    display: none;
+  }
+
+  .game-lettering1{
+    margin-top: 200px;
+    
+  }
+  
+  .scroll{
+    color: #484848;
+   
+  
+    margin-left: 20%;
+    margin-top: 100%;
+    
+  }
+
+  .arrow2{
+    rotate: 90deg;
+    margin-left: 45%;
+    margin-top: 5%;
+    width: 30px;
+    opacity: 0.3;
+  }
+ 
+}
+
+@media screen and (min-width: 1024px){
+
+  .scroll{
+    display: none;
+  }
+
+  .arrow2{
+  display: none;
+  }
+}

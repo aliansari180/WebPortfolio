@@ -1,0 +1,113 @@
+/* Animations.css */
+
+/* Animation keyframes for game-lettering */
+@keyframes game-lettering-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation keyframes for follow-me icons */
+  @keyframes follow-me-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation keyframes for Navbar */
+ 
+  
+  /* Animation keyframes for ribbon and arrow */
+  @keyframes arrow-animation {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes ribbon {
+    0% {
+      opacity: 0;
+      transform:   rotate(0deg); /* Rotate the ribbon */
+      
+    }
+    100% {
+      opacity: 1;
+  transform: rotate(45deg); /* Rotate the ribbon */
+      
+    }
+  }
+/* Home.css */
+
+/* ... Other CSS styles ... */
+
+/* Apply the animation for game-lettering */
+.game-lettering {
+    opacity: 0;
+    animation: game-lettering-animation 1s ease-in-out 1s forwards;
+  }
+  .game-lettering1 {
+    opacity: 0;
+    animation: game-lettering-animation 2s ease-in-out 2s forwards;
+    margin-top: 50px;
+  }
+  /* Apply the animation for follow-me icons */
+  .follow-me {
+    opacity: 0;
+    animation: follow-me-animation 1s ease-in-out 1s forwards;
+  }
+  
+  /* Apply the animation for ribbon and arrow */
+  .ribbon,
+  .arrow-container1 {
+    opacity: 0;
+  }
+  
+  .ribbon {
+    animation: ribbon 1s ease-in-out 2s forwards;
+  }
+  
+  .arrow-container1 {
+    animation: arrow-animation 1s ease-in-out 3s forwards;
+  }
+  .arrow-container1 {
+    opacity: 0;
+  }
+  
+  .ribbon {
+    animation: ribbon 1s ease-in-out 2s forwards;
+  }
+  .arrow-container {
+    opacity: 0;
+  }
+  
+  
+  .arrow-container {
+    animation: arrow-animation 1s ease-in-out 3s forwards;
+  }
+  .arrow-container {
+    opacity: 0;
+  }
+
+
+
+  
+  
+  /* ... Rest of your CSS ... */
+    /* Navbar.css */
+
+/* ... Other CSS styles ... */
+

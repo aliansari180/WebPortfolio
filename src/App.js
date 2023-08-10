@@ -1,28 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Portfolio from './components/Portfolio';
+import Certificates from './components/Certificates';
+import Contact from './components/Contact';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <img src='logo192.png' className="App-logo" alt="logo" />
-        <img src='/logo192.png' className="App-logo" alt="logo" />
-        <img src='./logo192.png' className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <>
+    <Router basename="/demo-project">
+      <Navbar/>
+    <Routes>
+    <Route  exact path="/demo-project" element={<Home/>}></Route>
+    <Route  path="/portfolio" element={<Portfolio/>}></Route>
+    <Route  path="/certificates" element={<Certificates/>}></Route>
+    <Route  path="/contact" element={<Contact/>}></Route>
+    </Routes>
+    </Router>
+    </>
+  )
 }
 
 export default App;

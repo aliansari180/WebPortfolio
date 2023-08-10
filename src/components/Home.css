@@ -1,0 +1,344 @@
+/* Home.css */
+
+/* Global styles */
+.ribbon {
+  position: fixed;
+  top: 90px;
+  right: -100px; /* Adjust this value to control the position of the ribbon */
+  z-index: 0;
+  background-color: #1882ec; /* Ribbon background color */
+  color: #fff; /* Ribbon text color */
+  padding: 15px 130px;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(45deg); /* Rotate the ribbon */
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ribbon a {
+  color: #fff; /* Link text color */
+  text-decoration: none;
+}
+
+
+body {
+    font-family:  monospace;
+    margin: 0;
+  padding: 0;
+  color: #8a8a8a; /* Text color for dark mode */
+  transition: background-color 2s ease-in-out; /* Add smooth transition for background color changes */
+  background-color: #2f2f2f;
+  /* overflow: hidden; */
+  /* color-scheme: #141d26', '#121212', '#432a2a', '#0b2031', '#1b230f; */
+  /* Add continuous background animation */
+  /* background: linear-gradient(45deg,#272829,#000000,
+       #2C3639,#3F4E4F);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite; */
+}
+
+/* @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+} */
+
+/* Home.css */
+
+/* ... Other CSS styles ... */
+
+
+.game-lettering h3 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  color: rgb(218, 218, 218);
+}
+/* 
+.game-lettering strong {
+  color: #f4cc07; 
+  Yellow color for the name
+} */
+
+.game-lettering p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 100;
+   
+}
+
+.game-lettering a {
+  color: #a9a9a9; /* Light blue color for links */
+  font-weight: 600;
+
+}
+
+.game-lettering a:hover {
+  text-decoration: underline; /* Add underline on hover */
+  
+}
+
+/* ... Rest of your CSS ... */
+
+@keyframes lineAnimation {
+  0%, 100% {
+    width: 100%; /* Start and end with the line having zero width */
+  }
+  50% {
+    width: 100%; /* Expand the line to 100% width at 50% of the animation */
+  }
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+ 
+ 
+}
+
+
+/* Header styles */
+.game-lettering {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  margin-bottom: auto;
+  text-align: center;
+  position: relative;
+  max-width: 800px;
+  opacity: 0;
+  animation: fade-in 2s forwards;
+  font-size: 15px; /* Animation to fade-in the element */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.game-lettering::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Position the line at the bottom of the container */
+  left: 0; /* Start the line from the left edge */
+  width: 0; /* Start with the line having zero width */
+  height: 2px; /* Set the height of the line */
+  background-color: #7f6666; /* Set the color of the line */
+  /* animation: lineAnimation 1s linear infinite; Apply the line animation */
+  /* background: linear-gradient(45deg,#f2f6fa,#883636,
+       #2C3639,#5a8689); */
+       /* animation: gradientAnimation 15s ease infinite; */
+}
+
+
+
+
+.game-lettering a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Animation keyframes for fade-in */
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* Follow Me styles */
+.follow-me {
+  text-align: left; /* Align icons to the left */
+  margin-top: 50px;
+  opacity: 0;
+  animation: slide-up 2s 0.5s forwards; /* Animation to slide-up the element after a 0.5s delay */
+  margin-top: -200px;
+}
+
+.follow-me ul {
+  list-style: none;
+  padding: 0;
+}
+
+.follow-me li {
+  display: flex;
+  margin-right: 10px;
+  /* margin: -5px ;  */
+
+}
+
+.follow-me a {
+  color: #66fcf1;
+  text-decoration: none;
+  display: flex;
+}
+
+.follow-me a:hover {
+  transform: scale(1.1); /* Enlarge the icons on hover */
+  transition: all 0.3s ease-in;
+}
+
+.follow-me a img {
+  width: 50px; /* Adjust the icon size */
+  height: 50px;
+  margin-bottom: 5px;
+  
+}
+
+
+.arrow-container {
+  position: fixed;
+  top: 50%;
+  right: -10px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-text {
+  font-size: 18px;
+  margin-left: 2px;
+  padding-left: 200px;
+  color: #8a8a8a;
+  opacity: 0; /* Start with the text hidden */
+  transition: opacity 0.3s ease-in-out; /* Add a transition for smooth fade-in effect */
+}
+
+.arrow-container:hover .arrow-text {
+  opacity: 1; /* Show the text on hover */
+}
+
+.arrow {
+  width: 70px;
+  height: 50px;
+  opacity: 1;
+}
+
+
+
+.meta {
+  width: 70px;
+  height: 30px;
+  margin-bottom: -10px;
+  margin-left: 5px;
+}
+
+/* .gif{
+  text-align: center;
+  margin-bottom: -220px;
+  margin-top: 50px;
+}
+.gifimg{
+    width: 100px;
+    height: 100px;
+  border-radius: 20%;
+} */
+/* Animation keyframes for slide-up */
+@keyframes slide-up {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (max-width: 768px) {
+
+  .ribbon {
+    position: fixed;
+    top: 70px;
+    right: -90px; /* Adjust this value to control the position of the ribbon */
+    z-index: 0;
+    background-color: #1882ec; /* Ribbon background color */
+    color: #fff; /* Ribbon text color */
+    /* padding: 20px ; */
+    padding-left: 110px;
+    padding-right: 110px;
+    font-size: 11px;
+    font-weight: 600;
+    transform: rotate(45deg); /* Rotate the ribbon */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ribbon a {
+    color: #fff; /* Link text color */
+    text-decoration: none;
+  }
+
+  /* Adjust font sizes and margins for smaller devices */
+  .game-lettering h3 {
+    font-size: 20px;
+  
+  }
+  .game-lettering {
+    
+    /* Adjust this value to control the spacing on the right side */
+    margin-top: 200px;
+    opacity: 0;
+    animation: slide-up 5s 5s forwards; /* Animation to slide-up the element after a 0.5s delay */
+     /* Adjust the width to take the space on the right side */
+  padding: 40px;
+    }
+
+
+  .game-lettering p {
+    font-size: 14px;
+    font-weight: 400;
+    
+  }
+
+  .game-lettering address {
+    font-size: 10px;
+  }
+
+  .follow-me a img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+
+  }
+  .follow-me {
+    text-align: left; /* Align icons to the left */
+    margin-top: 150px;
+    opacity: 0;
+    animation: slide-up 2s 0.5s forwards; /* Animation to slide-up the element after a 0.5s delay */
+    /* margin-top: -200px; */
+    display: flex;
+    flex-direction: column; /* Display icons in a column on mobile */
+    align-items: center; /* Center align the icons horizontally */
+    align-items: flex-start;
+  }
+
+  .follow-me ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display the icons in a row */
+  }
+
+  .follow-me li {
+    margin: 0 -1px; 
+    /* Add some spacing between the icons */
+  }
+
+  .game-lettering a {
+    color: #b1b0b0; /* Light blue color for links */
+    text-decoration: none; /* Remove underline from links */
+    transform: translateZ(25px); /* Adjust the depth of the 3D effect for links */
+    font-weight: 450;
+  
+  }
+
+  body{
+  background-color: #2a2a2a;
+  /* overflow: hidden; */
+}
+
+.arrow-container {
+  display: none;
+}
+
+}

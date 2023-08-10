@@ -1,0 +1,177 @@
+/* Contact.css */
+/*  */
+  
+  .wrapper {
+    max-width: 600px;
+    margin: 0 250px;
+    text-align: left;
+    opacity: 0;
+    animation: fade-in 5s 0.5s forwards;
+    
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-top: -250px;
+    font-weight: bolder;
+    color: whitesmoke;
+    text-align: left;
+    margin-left: 120px;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    /* color: #555; */
+    line-height: 1.6;
+    margin-top: 50px;
+
+  }
+  
+  .lets-talk {
+    margin-top: 2rem;
+  }
+  
+  .input-block {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .input-block li {
+    margin-bottom: 1.5rem;
+  }
+  
+  .label {
+    display: flex;
+    align-items: left;
+    color: azure;
+  }
+  
+  .i-svg {
+    margin-right: 0px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    color: #fff4f4;
+    background-color: #2a2a2a;
+    /* border: 1px solid ; */
+    /* border-radius: 5px; */
+    font-size: 1rem;
+    /* transition: border-color 0.2s ease-in-out; */
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    /* border-color: #3498db; */
+  }
+  
+  .submit {
+    margin-top: 1.5rem;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
+  .share {
+    margin-top: 2rem;
+  }
+  
+  .share h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .share p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .share button {
+    background-color: #34495e;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .share button:hover {
+    background-color: #2c3e50;
+  }
+
+  .follow-me1 a img {
+    width: 50px;
+    height: 50px;
+    display: inline;
+
+  }
+  .follow-me1 {
+    text-align: left; /* Align icons to the left */
+    margin-top: 0px;
+    opacity: 0;
+    animation: slide-up 2s 0.5s forwards; /* Animation to slide-up the element after a 0.5s delay */
+    /* margin-top: -200px; */
+    display: flex;
+    flex-direction: column; /* Display icons in a column on mobile */
+    align-items: center; /* Center align the icons horizontally */
+    align-items: flex-start;
+  }
+
+  .follow-me1 ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Display the icons in a row */
+  }
+
+  .follow-me1 li {
+    margin: 0 20px; 
+    /* Add some spacing between the icons */
+  }
+  
+  @media (max-width: 768px) {
+    .wrapper {
+      margin: 0 20px;
+      opacity: 0;
+    animation: fade-in 5s 0.5s forwards;
+    }
+  
+    header h1 {
+      font-size: 2rem;
+      margin-left: 0;
+      text-align: left;
+      margin-top: -60%;
+    }
+  
+    header p {
+      text-align: left;
+      margin-top: 50%;
+      font-size: 12px;
+
+
+    }
+  }
