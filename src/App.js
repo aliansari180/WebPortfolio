@@ -13,7 +13,6 @@ function App() {
     <>
     <Router basename="/demo-project">
       <Navbar/>
-      <Home/>
     <Routes>
     <Route  exact path="/demo-project" element={<Home/>}></Route>
     <Route  path="/portfolio" element={<Portfolio/>}></Route>
