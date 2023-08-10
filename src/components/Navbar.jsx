@@ -67,7 +67,7 @@ function Navbar() {
           </label>
           <div className="menu-items">
             <li>
-              <Link to="/" onClick={handleNavClose}>
+              <Link to="/demo-project" onClick={handleNavClose}>
                 about
               </Link>
             </li>
@@ -108,7 +108,7 @@ function Navbar() {
             onClick={handleMobileNavClose} // Use the new function here
           >
             <li>
-              <Link to="/" onClick={handleNavClose}>
+              <Link to="/demo-project" onClick={handleNavClose}>
                 About
               </Link>
             </li>
