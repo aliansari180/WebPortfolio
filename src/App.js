@@ -11,7 +11,7 @@ function App() {
   return (
 
     <>
-    <Router  basename="/">
+    <Router  basename="/demo-project">
       <Navbar/>
     <Routes>
     <Route  exact path="/demo-project" element={<Home/>}></Route>
