@@ -18,7 +18,7 @@ function Portfolio() {
 
     const handleNav = () => {
         // Navigate to the portfolio page
-        navigate("/demo-project");
+        navigate("/");
       }
     const moveNav = () => {
         // Navigate to the portfolio page
